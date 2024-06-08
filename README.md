@@ -518,8 +518,8 @@ docker exec -it Myredis bash
 
 Importar los datos del archivo csv utilizando el script:
 ```
-chmod +x import_geoadd.sh
-./import_geoadd.sh
+chmod +x import_geoadd.sh;
+./import_geoadd.sh;
 ```
 
 #### Item B
