@@ -466,11 +466,11 @@ Luego, corremos los siguientes dos comandos para cargar las relaciones de los da
 ```
 MATCH (p:Product),(c:Category)
 WHERE p.categoryID = c.categoryID
-CREATE (p)-[:PART_OF]->(c)
+CREATE (p)-[:PART_OF]->(c);
 
 MATCH (p:Product),(s:Supplier)
 WHERE p.supplierID = s.supplierID
-CREATE (s)-[:SUPPLIES]->(p)
+CREATE (s)-[:SUPPLIES]->(p);
 ```
 #### Item A
 Para saber la cantidad de productos hay en la base:
