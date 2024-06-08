@@ -1,3 +1,5 @@
+#
+
 docker pull mongo
 docker run --name Mymongo -p 27017:27017 -d mongo
 
