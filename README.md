@@ -25,7 +25,7 @@ use local;
 ```
 
 #### Item B
-Cantidad de albumes por año ordenadas descendientemente:
+Para averiguar la cantidad de albumes por año ordenados descendientemente utilizamos la siguiente consulta:
 ```
 db.albums.aggregate([
   {
@@ -103,7 +103,7 @@ Resultado:
 
 ```
 #### Item C
-Agregar atributo scor
+Agregar un nuevo atributo 'score' que sea 501-Number:
 ```
 db.albums.updateMany({}, [
   {
@@ -126,7 +126,7 @@ Resultado:
 }
 ```
 #### Item D
-Score de cada artista
+Consultamos el 'score' de cada artista de la siguiente manera:
 ```
 db.albums.aggregate([
   {
@@ -441,7 +441,7 @@ Para establecer conexión con la base de datos corremos el comando:
 ```
 :server connect
 ```
-Ejecutar el próximo comando desde la interfaz web de Neo4J para generar la base de datos utilizando un sandbox en blanco
+Ejecutar el próximo comando desde la interfaz web de Neo4J para generar la base de datos utilizando un sandbox en blanco:
 ``` 
 :play northwind-graph
 ```
